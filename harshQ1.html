@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div:hover {
+  animation: shake 4.5s;
+  animation-iteration-count: 3;
+  transition-duration: 120s;
+  transition-delay: 2s;
+  transition-property: width, height;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(50px, 0px) rotate(10deg); }
+  20% { transform: translate(100px, 0px) rotate(20deg); right:100px;top:0;}
+  30% { transform: translate(150px, 0px) rotate(30deg); left:150px;top:0;}
+  40% { transform: translate(200px, 0px) rotate(40deg); left:200px;top:0;}
+  50% { transform: translate(250px, 0px) rotate(50deg); left:250px;top:0;height:150;width:150px;}
+  60% { transform: translate(300px, 0px) rotate(60deg);left:300px;top:0; }
+  70% { transform: translate(350px, 0px) rotate(70deg);left:350px;top:0; }
+  80% { transform: translate(400px, 0px) rotate(80deg); left:400px;top:0;}
+  90% { transform: translate(450px, 0px) rotate(90deg); left:450px;top:0;}
+  100% { transform: translate(500px, 0px) rotate(100deg); left:500px;top:0;}
+}
+</style>
+</head>
+<body>
+
+<p>Hover over the image:</p>
+<div style=" width:100px;height:100px;background-color: blue">
+</div>
+</body>
+</html>
